@@ -1,0 +1,31 @@
+﻿@model WebApplication2.Models.Student
+
+<h2>Đăng ký chuyên ngành</h2>
+
+<form asp-action="ShowKQ" asp-controller="Student" method="post">
+    <label>MSSV:</label>
+    <input asp-for="MSSV" class="form-control" />
+    <br />
+
+    <label>Họ tên:</label>
+    <input asp-for="HoTen" class="form-control" />
+    <br />
+
+    <label>Điểm TB:</label>
+    <input asp-for="DiemTB" class="form-control" />
+    <br />
+
+    <label>Chuyên ngành:</label>
+    <select asp-for="ChuyenNganh" class="form-control">
+        <option value="CNPM">CNPM</option>
+        <option value="HTTT">HTTT</option>
+        <option value="ANM">ANM</option>
+        <option value="TTNT">TTNT</option>
+        <option value="MMT">MMT</option>
+        <option value="ATTT">ATTT</option>
+    </select>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Đăng ký</button>
+</form>
+
